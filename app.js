@@ -1,18 +1,12 @@
-let tl=gsap.timeline();
-tl.from("span",{
-    y:-30,
-    duration:1,
-    delay:0.5,
-    opacity:0
+gsap.from('.page1 .box',{
+    delay:1,
+    rotate:720,
+    duration:2,
+    scale:0
 })
-tl.from("li",{
-    y:-40,
-    stagger:1,
-    
-})
-tl.from("h1",{
-   scale:0,
-   rotate:900,
-    opacity:1,
-    duration:1
+gsap.from('.page2 .box',{
+    rotate:720,
+    duration:2,
+    scale:0,
+    scrollTrigger:".page2 .box"
 })
